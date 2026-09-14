@@ -1,0 +1,1313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="description"
+    content="Nazir Sherzad — Software Engineer & Web Developer"
+  >
+
+  <title>Nazir Sherzad | Software Engineer</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Cursor Glow -->
+  <div class="cursor-glow"></div>
+
+  <!-- Noise -->
+  <div class="noise"></div>
+
+  <!-- Scroll Progress -->
+  <div class="progress">
+    <span id="progressBar"></span>
+  </div>
+
+
+  <!-- =========================================
+       SIDEBAR
+       ========================================= -->
+
+  <aside class="sidebar">
+
+    <a
+      class="brand"
+      href="#home"
+      aria-label="Nazir Sherzad home"
+    >
+      <span>NS</span>
+    </a>
+
+    <nav>
+
+      <!-- Home -->
+      <a href="#home" class="nav-link active">
+        <i class="icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24">
+            <path d="M3 10.5 12 3l9 7.5"></path>
+            <path d="M5.5 9.5V21h13V9.5"></path>
+            <path d="M9.5 21v-6h5v6"></path>
+          </svg>
+        </i>
+        <span>Home</span>
+      </a>
+
+
+      <!-- About -->
+      <a href="#about" class="nav-link">
+        <i class="icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="9"></circle>
+            <path d="M12 10v6"></path>
+            <circle
+              cx="12"
+              cy="7"
+              r=".7"
+              fill="currentColor"
+              stroke="none"
+            ></circle>
+          </svg>
+        </i>
+        <span>About</span>
+      </a>
+
+
+      <!-- Skills -->
+      <a href="#skills" class="nav-link">
+        <i class="icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24">
+            <path d="m8 8-4 4 4 4"></path>
+            <path d="m16 8 4 4-4 4"></path>
+            <path d="m14 4-4 16"></path>
+          </svg>
+        </i>
+        <span>Skills</span>
+      </a>
+
+
+      <!-- Projects -->
+      <a href="#projects" class="nav-link">
+        <i class="icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24">
+            <rect
+              x="3"
+              y="4"
+              width="18"
+              height="16"
+              rx="2"
+            ></rect>
+            <path d="M3 9h18"></path>
+            <path d="M7 14h4"></path>
+            <path d="M7 17h7"></path>
+          </svg>
+        </i>
+        <span>Projects</span>
+      </a>
+
+
+      <!-- Contact -->
+      <a href="#contact" class="nav-link">
+        <i class="icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24">
+            <rect
+              x="3"
+              y="5"
+              width="18"
+              height="14"
+              rx="2"
+            ></rect>
+            <path d="m4 7 8 6 8-6"></path>
+          </svg>
+        </i>
+        <span>Contact</span>
+      </a>
+
+    </nav>
+
+
+    <!-- Theme Toggle -->
+    <button
+      class="theme-toggle"
+      id="themeToggle"
+      aria-label="Toggle theme"
+    >
+
+      <!-- Moon -->
+      <span>
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M20 15.5A8.5 8.5 0 0 1 8.5 4 8.5 8.5 0 1 0 20 15.5Z"></path>
+        </svg>
+      </span>
+
+      <!-- Sun -->
+      <b>
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="12" cy="12" r="4"></circle>
+
+          <path d="M12 2v2"></path>
+          <path d="M12 20v2"></path>
+
+          <path d="m4.93 4.93 1.41 1.41"></path>
+          <path d="m17.66 17.66 1.41 1.41"></path>
+
+          <path d="M2 12h2"></path>
+          <path d="M20 12h2"></path>
+
+          <path d="m4.93 19.07 1.41-1.41"></path>
+          <path d="m17.66 6.34 1.41-1.41"></path>
+        </svg>
+      </b>
+
+    </button>
+
+  </aside>
+
+<!-- =========================================
+     MOBILE CONTROLS
+     ========================================= -->
+
+<div class="mobile-controls">
+
+  <!-- Mobile Theme Toggle -->
+ 
+  <!-- Mobile Menu -->
+  <button
+    class="mobile-menu"
+    id="mobileMenu"
+    aria-label="Open menu"
+  >
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M4 7h16"></path>
+      <path d="M4 12h16"></path>
+      <path d="M4 17h16"></path>
+    </svg>
+  </button>
+
+</div>
+
+
+<!-- =========================================
+     MOBILE NAVIGATION
+     ========================================= -->
+
+<div class="mobile-nav" id="mobileNav">
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact">Contact</a>
+</div>  <!-- =========================================
+       MAIN
+       ========================================= -->
+
+  <main>
+
+
+    <!-- =======================================
+         HERO
+         ======================================= -->
+
+    <section id="home" class="hero section">
+
+      <div class="hero-grid"></div>
+
+      <div class="hero-orbit orbit-one"></div>
+      <div class="hero-orbit orbit-two"></div>
+
+
+      <div class="hero-copy reveal">
+
+        <div class="eyebrow">
+          <span class="pulse-dot"></span>
+          Available for new projects
+        </div>
+
+        <p class="hello">Hi, I'm</p>
+
+        <h1>
+          Nazir <em>Sherzad</em>
+        </h1>
+
+        <div class="role">
+          Software Engineer
+          <span>·</span>
+          Web Developer
+        </div>
+
+        <div class="type-line">
+          <span id="typed"></span>
+          <span class="caret">|</span>
+        </div>
+
+        <p class="hero-text">
+          I build modern, scalable and user-focused web applications.
+          I enjoy turning complex ideas into clean digital products.
+        </p>
+
+
+        <div class="hero-actions">
+
+          <a
+            class="btn primary magnetic"
+            href="#projects"
+          >
+            Explore My Work
+
+            <span>
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M7 17L17 7M8 7h9v9"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </span>
+          </a>
+
+
+          <a
+            class="btn ghost magnetic"
+            href="#contact"
+          >
+            Let's Talk
+
+            <span>
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M5 12h14M13 6l6 6-6 6"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </span>
+          </a>
+
+        </div>
+
+
+        <div class="stats">
+
+          <div>
+            <strong data-count="4">0</strong>
+            <small>+ Years Learning</small>
+          </div>
+
+          <div>
+            <strong data-count="20">0</strong>
+            <small>+ Projects</small>
+          </div>
+
+          <div>
+            <strong data-count="100">0</strong>
+            <small>% Dedication</small>
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- Hero Visual -->
+
+      <div class="hero-visual reveal delay">
+
+        <div class="photo-frame">
+
+          <div class="photo-ring"></div>
+
+          <img
+            src="assets/nazir.jpg"
+            alt="Nazir Sherzad"
+            onerror="this.style.display='none';this.parentElement.classList.add('photo-missing')"
+          >
+
+          <div class="photo-fallback">
+            <span>NS</span>
+
+            <small>
+              Place your photo at<br>
+              <b>assets/nazir.jpg</b>
+            </small>
+          </div>
+
+
+          <!-- Code Card -->
+
+          <div class="floating-card code-card">
+
+            <span>01</span>
+
+            <code>
+              const developer = {<br>
+              &nbsp;stack: ["Python", "Django"],<br>
+              &nbsp;mindset: "build"
+            </code>
+
+          </div>
+
+
+          <!-- Status Card -->
+
+          <div class="floating-card status-card">
+            <i></i>
+            Building something new
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- Scroll Cue -->
+
+      <a class="scroll-cue" href="#about">
+        <span></span>
+        Scroll to explore
+      </a>
+
+    </section>
+
+
+
+    <!-- =======================================
+         ABOUT
+         ======================================= -->
+
+    <section id="about" class="section light-section">
+
+      <div class="section-head reveal">
+
+        <span>01 — ABOUT</span>
+
+        <h2>
+          Ideas into <em>digital reality.</em>
+        </h2>
+
+      </div>
+
+
+      <div class="about-grid">
+
+        <div class="about-text reveal">
+
+          <p class="lead">
+            I'm a Software Engineer and Web Developer who enjoys
+            creating useful products, solving problems and learning
+            new technologies.
+          </p>
+
+          <p>
+            My main focus is backend development with Python and Django,
+            combined with modern frontend technologies. I care about
+            clean code, responsive interfaces and building things that
+            actually work.
+          </p>
+
+          <div class="quote">
+            “The best way to predict the future is to build it.”
+          </div>
+
+        </div>
+
+
+        <div class="about-cards reveal delay">
+
+          <div class="info-card">
+            <span>⌁</span>
+            <b>Focus</b>
+            <small>Web Applications</small>
+          </div>
+
+          <div class="info-card">
+            <span>◈</span>
+            <b>Backend</b>
+            <small>Python · Django · APIs</small>
+          </div>
+
+          <div class="info-card">
+            <span>◇</span>
+            <b>Frontend</b>
+            <small>HTML · CSS · JavaScript</small>
+          </div>
+
+          <div class="info-card">
+            <span>∞</span>
+            <b>Mindset</b>
+            <small>Always learning</small>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =======================================
+         SKILLS
+         ======================================= -->
+
+    <section id="skills" class="section dark-section">
+
+      <div class="section-head reveal">
+
+        <span>02 — SKILLS</span>
+
+        <h2>
+          Tools I use to <em>build.</em>
+        </h2>
+
+      </div>
+
+
+      <div class="skills-wrap">
+
+
+        <div class="skill-list reveal">
+
+          <div class="skill">
+
+            <div>
+              <b>Python</b>
+              <span>90%</span>
+            </div>
+
+            <div class="bar">
+              <i style="--w:90%"></i>
+            </div>
+
+          </div>
+
+
+          <div class="skill">
+
+            <div>
+              <b>Django</b>
+              <span>88%</span>
+            </div>
+
+            <div class="bar">
+              <i style="--w:88%"></i>
+            </div>
+
+          </div>
+
+
+          <div class="skill">
+
+            <div>
+              <b>JavaScript</b>
+              <span>82%</span>
+            </div>
+
+            <div class="bar">
+              <i style="--w:82%"></i>
+            </div>
+
+          </div>
+
+
+          <div class="skill">
+
+            <div>
+              <b>HTML / CSS</b>
+              <span>94%</span>
+            </div>
+
+            <div class="bar">
+              <i style="--w:94%"></i>
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- Terminal -->
+
+        <div class="terminal reveal delay">
+
+          <div class="terminal-top">
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+            <label>
+              nazir@portfolio ~
+            </label>
+
+          </div>
+
+
+          <pre><code><b>$</b> whoami
+
+Nazir Sherzad
+
+<b>$</b> cat stack.txt
+
+Python
+
+Django
+
+Django REST Framework
+
+JavaScript
+
+HTML / CSS
+
+Tailwind CSS
+
+PostgreSQL
+
+Docker
+
+<b>$</b> echo $MINDSET
+
+"Keep building."</code></pre>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+<!-- =======================================
+     PROJECTS
+     ======================================= -->
+
+<section
+  id="projects"
+  class="section light-section projects-section"
+>
+
+  <div class="section-head reveal">
+
+    <span>03 — RECENT PROJECTS</span>
+
+    <h2>
+      Selected <em>work.</em>
+    </h2>
+
+  </div>
+
+
+  <div class="projects-grid">
+
+
+    <!-- =================================
+         A1 RUGS
+         ================================= -->
+
+    <a
+      href="https://shopa1rugs.com"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="project reveal"
+    >
+
+      <div class="project-art project-image">
+
+        <img
+          src="assets/a1rugs.png"
+          alt="A1 Rugs website screenshot"
+          loading="lazy"
+        />
+
+        <div class="project-overlay">
+
+          <span>VIEW PROJECT</span>
+
+          <span class="project-arrow">↗</span>
+
+        </div>
+
+      </div>
+
+
+      <div class="project-body">
+
+        <div class="project-title">
+
+          <div>
+
+            <small>01 / 03</small>
+
+            <h3>A1 Rugs</h3>
+
+          </div>
+
+          <span class="project-link">↗</span>
+
+        </div>
+
+
+        <p>
+          Modern e-commerce platform with Django,
+          product management, cart, checkout and
+          secure online payments.
+        </p>
+
+
+        <div class="tags">
+
+          <span>Django</span>
+          <span>REST API</span>
+          <span>PostgreSQL</span>
+
+        </div>
+
+      </div>
+
+    </a>
+
+
+
+    <!-- =================================
+         MONO7177
+         ================================= -->
+
+    <a
+      href="https://mono1771.netlify.app/"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="project reveal delay"
+    >
+
+      <div class="project-art project-image">
+
+        <img
+          src="assets/mono.png"
+          alt="MONO7177 Construction website screenshot"
+          loading="lazy"
+        />
+
+        <div class="project-overlay">
+
+          <span>VIEW PROJECT</span>
+
+          <span class="project-arrow">↗</span>
+
+        </div>
+
+      </div>
+
+
+      <div class="project-body">
+
+        <div class="project-title">
+
+          <div>
+
+            <small>02 / 03</small>
+
+            <h3>MONO7177 Construction</h3>
+
+          </div>
+
+          <span class="project-link">↗</span>
+
+        </div>
+
+
+        <p>
+          Professional responsive website created
+          to showcase construction services with
+          modern animations and interactions.
+        </p>
+
+
+        <div class="tags">
+
+          <span>HTML</span>
+          <span>Tailwind CSS</span>
+          <span>JavaScript</span>
+
+        </div>
+
+      </div>
+
+    </a>
+
+
+
+    <!-- =================================
+         AMO ELITE
+         ================================= -->
+
+    <a
+      href="#"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="project reveal"
+    >
+
+      <div class="project-art project-image">
+
+        <img
+          src="assets/amoelite1.png"
+          alt="AMO Elite website screenshot"
+          loading="lazy"
+        />
+
+        <div class="project-overlay">
+
+          <span>VIEW PROJECT</span>
+
+          <span class="project-arrow">↗</span>
+
+        </div>
+
+      </div>
+
+
+      <div class="project-body">
+
+        <div class="project-title">
+
+          <div>
+
+            <small>03 / 03</small>
+
+            <h3>AMO Elite</h3>
+
+          </div>
+
+          <span class="project-link">↗</span>
+
+        </div>
+
+
+        <p>
+          A modern digital experience designed
+          with a strong visual identity, responsive
+          layout and interactive interface.
+        </p>
+
+
+        <div class="tags">
+
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+
+        </div>
+
+      </div>
+
+    </a>
+
+
+  </div>
+
+</section>
+
+
+    <!-- =======================================
+         CONTACT
+         ======================================= -->
+
+    <section id="contact" class="section contact-section">
+
+      <div class="contact-glow"></div>
+
+
+      <div class="section-head reveal">
+
+        <span>04 — CONTACT</span>
+
+        <h2>
+          Let's build something <em>great.</em>
+        </h2>
+
+      </div>
+
+
+      <div class="contact-box reveal delay">
+
+        <p>
+          Have an idea, a project, or simply want to say hello?
+        </p>
+
+
+        <a
+          class="big-email magnetic"
+          href="mailto:nazirsherzad12345@gmail.com"
+        >
+
+          Let's start a conversation
+
+          <span class="arrow-icon" aria-hidden="true">
+
+            <svg viewBox="0 0 24 24">
+
+              <path
+                d="M7 17L17 7M8 7h9v9"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+
+            </svg>
+
+          </span>
+
+        </a>
+
+
+        <!-- Social Icons -->
+
+        <div class="socials">
+
+
+          <!-- GitHub -->
+
+          <a
+            href="https://github.com/nazir19980501/"
+            aria-label="GitHub"
+          >
+
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+
+              <path
+                d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56v-2.17c-3.2.7-3.87-1.36-3.87-1.36-.53-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.75 2.68 1.25 3.33.96.1-.74.4-1.25.73-1.54-2.55-.29-5.23-1.28-5.23-5.69 0-1.26.45-2.29 1.18-3.1-.12-.29-.51-1.47.11-3.06 0 0 .96-.31 3.15 1.18a10.9 10.9 0 0 1 5.74 0c2.19-1.49 3.15-1.18 3.15-1.18.62 1.59.23 2.77.11 3.06.73.81 1.18 1.84 1.18 3.1 0 4.42-2.69 5.39-5.25 5.67.41.36.78 1.07.78 2.16v3.2c0 .31.21.68.8.56A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"
+                fill="currentColor"
+              />
+
+            </svg>
+
+          </a>
+
+
+          <!-- LinkedIn -->
+
+       <!-- WhatsApp -->
+<a
+  href="https://wa.link/wob03r"
+  aria-label="WhatsApp"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <svg viewBox="0 0 24 24" aria-hidden="true">
+    <path
+      d="M20.52 3.48A11.87 11.87 0 0 0 12.05 0C5.48 0 .13 5.35.13 11.92c0 2.1.55 4.15 1.6 5.96L.03 24l6.27-1.64a11.9 11.9 0 0 0 5.75 1.47h.01c6.57 0 11.92-5.35 11.92-11.92 0-3.19-1.24-6.18-3.46-8.43ZM12.06 21.8h-.01a9.88 9.88 0 0 1-5.04-1.38l-.36-.21-3.72.97.99-3.63-.23-.37a9.87 9.87 0 1 1 8.37 4.62Zm5.42-7.39c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.25-.46-2.38-1.46-.88-.78-1.47-1.74-1.64-2.03-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.49s1.07 2.89 1.22 3.09c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.35.2 1.86.12.57-.09 1.76-.72 2.01-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35Z"
+      fill="currentColor"
+    />
+  </svg>
+</a>
+
+          <!-- Instagram -->
+
+          <a
+            href="https://www.instagram.com/na_zir_1/"
+            aria-label="Instagram"
+          >
+
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+
+              <rect
+                x="3"
+                y="3"
+                width="18"
+                height="18"
+                rx="5"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+              />
+
+              <circle
+                cx="12"
+                cy="12"
+                r="4"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+              />
+
+              <circle
+                cx="17.3"
+                cy="6.8"
+                r="1.1"
+                fill="currentColor"
+              />
+
+            </svg>
+
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <!-- Footer -->
+
+      <footer>
+
+        <span>
+          © 2026 Nazir Sherzad
+        </span>
+
+        <span class="footer-built">
+
+          Designed & built with
+
+          <b aria-label="love">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+
+              <path
+                d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 21l7.8-7.5 1.1-1.1a5.5 5.5 0 0 0-.1-7.8Z"
+                fill="currentColor"
+              />
+
+            </svg>
+          </b>
+
+        </span>
+
+      </footer>
+
+    </section>
+
+  </main>
+
+
+
+  <!-- =========================================
+       OTHER PORTFOLIO DESIGNS
+       ========================================= -->
+
+  <div class="design-switcher" id="designSwitcher">
+
+    <div class="design-note" id="designNote">
+      <span>Change theme</span>
+      <strong>Click</strong>
+    </div>
+
+    <button
+      type="button"
+      class="design-next-btn"
+      id="designNextBtn"
+      aria-label="Change theme"
+    >
+      <span aria-hidden="true">
+        <svg viewBox="0 0 24 24">
+          <path d="M12 3a9 9 0 1 0 9 9c0-.55-.45-1-1-1h-3.2a2.8 2.8 0 0 1-2.8-2.8V5a2 2 0 0 0-2-2Z"></path>
+          <circle cx="7.5" cy="10" r="1" fill="currentColor" stroke="none"></circle>
+          <circle cx="10" cy="6.8" r="1" fill="currentColor" stroke="none"></circle>
+          <circle cx="6.8" cy="14.2" r="1" fill="currentColor" stroke="none"></circle>
+        </svg>
+      </span>
+    </button>
+
+    <div class="design-menu" id="designMenu">
+
+      <div class="design-menu-title">
+        Change theme
+      </div>
+
+      <a href="assets/page1.html">
+        <span>01</span>
+        Digital Sunset
+        <b>↗</b>
+      </a>
+
+      <a href="assets/page2.html">
+        <span>02</span>
+        Neon Noir
+        <b>↗</b>
+      </a>
+
+      <a href="assets/page.html">
+        <span>03</span>
+        Cyber Glow
+        <b>↗</b>
+      </a>
+
+    </div>
+
+  </div>
+
+
+  <style>
+    /* =========================================
+       OTHER PORTFOLIO DESIGNS
+       ========================================= */
+
+    .design-switcher {
+      position: fixed;
+      right: 18px;
+      top: 52%;
+      z-index: 9999;
+      display: flex;
+      align-items: center;
+      pointer-events: none;
+    }
+
+    .design-next-btn {
+      width: 52px;
+      height: 52px;
+      border: 1px solid rgba(0, 0, 0, 0.12);
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.82);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      color: #111;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      pointer-events: auto;
+      box-shadow: 0 10px 35px rgba(0, 0, 0, 0.12);
+      transition:
+        transform 0.35s ease,
+        background 0.35s ease,
+        color 0.35s ease,
+        box-shadow 0.35s ease;
+    }
+
+    .design-next-btn span {
+      width: 21px;
+      height: 21px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transform: rotate(0deg);
+      transition: transform 0.35s ease;
+    }
+
+    .design-next-btn span svg {
+      width: 21px;
+      height: 21px;
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 1.6;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .design-next-btn:hover {
+      transform: translateY(-3px);
+      background: #111;
+      color: #fff;
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+    }
+
+    .design-next-btn:hover span {
+      transform: rotate(18deg) scale(1.05);
+    }
+
+    .design-note {
+      position: absolute;
+      right: 66px;
+      white-space: nowrap;
+      padding: 11px 16px;
+      border-radius: 12px;
+      background: #111;
+      color: #fff;
+      font-size: 12px;
+      box-shadow: 0 12px 35px rgba(0, 0, 0, 0.18);
+      opacity: 0;
+      transform: translateX(15px) scale(0.96);
+      pointer-events: none;
+      transition:
+        opacity 0.45s ease,
+        transform 0.45s cubic-bezier(.2,.8,.2,1);
+    }
+
+    .design-note::after {
+      content: "";
+      position: absolute;
+      right: -6px;
+      top: 50%;
+      width: 12px;
+      height: 12px;
+      background: #111;
+      transform: translateY(-50%) rotate(45deg);
+    }
+
+    .design-note strong {
+      margin-left: 5px;
+      text-decoration: underline;
+    }
+
+    .design-switcher.show-note .design-note {
+      opacity: 1;
+      transform: translateX(0) scale(1);
+    }
+
+    .design-menu {
+      position: absolute;
+      right: 0;
+      top: 62px;
+      width: 230px;
+      padding: 12px;
+      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(10px) scale(0.96);
+      transform-origin: top right;
+      transition:
+        opacity 0.3s ease,
+        visibility 0.3s ease,
+        transform 0.3s ease;
+      pointer-events: none;
+    }
+
+    .design-switcher.menu-open .design-menu {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0) scale(1);
+      pointer-events: auto;
+    }
+
+    .design-menu-title {
+      padding: 8px 10px 12px;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      opacity: 0.45;
+    }
+
+    .design-menu a {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 12px 10px;
+      border-radius: 10px;
+      color: #111;
+      text-decoration: none;
+      font-size: 13px;
+      transition:
+        background 0.25s ease,
+        transform 0.25s ease;
+    }
+
+    .design-menu a:hover {
+      background: rgba(0, 0, 0, 0.06);
+      transform: translateX(3px);
+    }
+
+    .design-menu a span {
+      font-size: 10px;
+      opacity: 0.4;
+      width: 20px;
+    }
+
+    .design-menu a b {
+      margin-left: auto;
+      font-size: 15px;
+      font-weight: 400;
+    }
+
+    @media (max-width: 600px) {
+      .design-switcher {
+        right: 10px;
+        top: 52%;
+      }
+
+      .design-next-btn {
+        width: 46px;
+        height: 46px;
+      }
+
+      .design-next-btn span,
+      .design-next-btn span svg {
+        width: 19px;
+        height: 19px;
+      }
+
+      .design-note {
+        right: 56px;
+        font-size: 11px;
+        padding: 9px 12px;
+        max-width: calc(100vw - 80px);
+      }
+
+      .design-menu {
+        width: min(205px, calc(100vw - 70px));
+      }
+    }
+  </style>
+
+
+  <script>
+    /* =========================================
+       OTHER PORTFOLIO DESIGNS
+       ========================================= */
+
+    (() => {
+      const switcher = document.getElementById("designSwitcher");
+      const button = document.getElementById("designNextBtn");
+
+      if (!switcher || !button) return;
+
+      // Show the note after 5 seconds.
+      setTimeout(() => {
+        switcher.classList.add("show-note");
+
+        // Hide the note after 6 seconds.
+        setTimeout(() => {
+          switcher.classList.remove("show-note");
+        }, 6000);
+
+      }, 5000);
+
+      // Open / close the design menu.
+      button.addEventListener("click", (event) => {
+        event.stopPropagation();
+
+        switcher.classList.toggle("menu-open");
+        switcher.classList.remove("show-note");
+      });
+
+      // Close when clicking elsewhere.
+      document.addEventListener("click", (event) => {
+        if (!switcher.contains(event.target)) {
+          switcher.classList.remove("menu-open");
+        }
+      });
+    })();
+  </script>
+
+  <!-- JavaScript -->
+
+  <script src="functions.js"></script>
+
+</body>
+
+</html>
